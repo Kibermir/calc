@@ -8,6 +8,5 @@ class jFrameApp extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         add( new jPanelApp());
         setVisible(true);
-        System.out.print(Double.parseDouble("2.5"));
     }
 }

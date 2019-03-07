@@ -1,9 +1,9 @@
 
 class MetodCalc
 {
-    public int calc ( int n1, String op, int n2)
+    public double calc ( double n1, String op, double n2)
     {
-        int res = 0;
+        double res = 0;
         switch (op)
         {
             case "+":

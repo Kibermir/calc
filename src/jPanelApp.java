@@ -5,12 +5,11 @@ import java.awt.event.ActionListener;
 
 class jPanelApp extends JPanel
 {
-    //JTextField txt1 = null;  //зачем это, пока не понял.
-    int res = 0;
-    int res1 = 0;
+    double res = 0;
+    double res1 = 0;
     String op = "";
 
-    private TextField txt1;
+    private JTextField txt1;
 
     public void delNull()
     {
@@ -27,10 +26,10 @@ class jPanelApp extends JPanel
         {
 
             setLayout(null);  //Этот вызов запрещает использовать предусмотренный по умолчанию механизма управления размещением компонентов.
-            // Specifies the position of the elemens
 
-            txt1 = new TextField(); //Текстовое поле
-            txt1.setBounds(10, 10, 235, 25);
+            txt1 = new JTextField(); //Текстовое поле
+            txt1.setBounds(10, 10, 235, 35);
+            txt1.setHorizontalAlignment(JTextField.RIGHT);
             txt1.setText("0");
 
             JButton b0 = new JButton("0");
@@ -112,11 +111,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 1);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -127,11 +121,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 2);
-                    if (res==0) {
-                        res = Integer.parseInt(txt1.getText());
-                    } else {
-                        res1 = Integer.parseInt(txt1.getText());
-                    }
                 }
             });
 
@@ -142,11 +131,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 3);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -157,12 +141,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 4);
-                    if (res==0)
-                    {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -173,11 +151,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 5);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -188,11 +161,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 6);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -203,11 +171,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 7);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -218,11 +181,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 8);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -233,11 +191,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 9);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -248,11 +201,6 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 0);
-                    if (res==0) {
-                        res = Integer.valueOf(txt1.getText());
-                    } else {
-                        res1 = Integer.valueOf(txt1.getText());
-                    }
                 }
             });
 
@@ -260,7 +208,7 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
-                    res = Integer.valueOf(txt1.getText());
+                    res = Double.parseDouble(txt1.getText());
                     txt1.setText("");
                     op = "+";
                 }
@@ -271,7 +219,7 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
-                    res = Integer.valueOf(txt1.getText());
+                    res = Double.parseDouble(txt1.getText());
                     txt1.setText("");
                     op = "-";
                 }
@@ -282,7 +230,7 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
-                    res = Integer.valueOf(txt1.getText());
+                    res = Double.parseDouble(txt1.getText());
                     txt1.setText("");
                     op = "*";
                 }
@@ -293,7 +241,7 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
-                    res = Integer.valueOf(txt1.getText());
+                    res = Double.parseDouble(txt1.getText());
                     txt1.setText("");
                     op = "/";
                 }
@@ -304,12 +252,11 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg0)
                 {
-                    int num = Integer.valueOf(res);
-                    int num1 = Integer.valueOf(res1);
+                    res1 = Double.parseDouble(txt1.getText());
                     String strOp = op;
 
                     MetodCalc mc = new MetodCalc();
-                    String strRes = String.valueOf(mc.calc(num, strOp, num1 ));
+                    String strRes = String.valueOf(mc.calc(res, strOp, res1 ));
                     txt1.setText(strRes);
                 }
             });
