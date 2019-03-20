@@ -19,7 +19,7 @@ class MetodCalc
                 res = n1/n2;
                 break;
             default:
-                res = 0;
+                res = n2;
                 break;
         }
         return res;

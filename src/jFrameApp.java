@@ -3,7 +3,7 @@ import javax.swing.*;
 class jFrameApp extends JFrame {
     public jFrameApp()
     {
-        setBounds(100, 100, 270, 400);
+        setBounds(100, 100, 280, 400);
         setTitle("Calculator");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         add( new jPanelApp());
