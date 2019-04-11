@@ -2,17 +2,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.text.*;
-import java.util.Locale;
+
 
 class jPanelApp extends JPanel
 {
-    double res = 0, resCicl = 0, res1 = 0;
+    double res = 0, resCicl = 0, res1 = 0, mem = 0;
     String op = "";
-    int mathPress = 0, resPress = 0;
+    int mathPress = 0, resPress = 0, pointPress = 0, sendTotxt2 = 0, setRes;
 
-    int setRes;
-    private JTextField txt1, txt2;
+    private JTextField txt1, txt2, txtM;
 
 
     public void delNull()
@@ -28,13 +26,20 @@ class jPanelApp extends JPanel
         }
     }
 
+
     public void getOpp()
     {
+
+
         res1 = Double.parseDouble(txt1.getText());
         String strOp = op;
         MetodCalc mc = new MetodCalc();
         String strRes = String.valueOf(mc.calc(res, strOp, res1));
         txt1.setText(strRes);
+        if (op == "%")
+        {
+            txt2.setText(txt2.getText() + " " + strRes);
+        }
         setRes = 1;
         res = Double.parseDouble(txt1.getText());
     }
@@ -47,7 +52,7 @@ class jPanelApp extends JPanel
             setLayout(null);  //Этот вызов запрещает использовать предусмотренный по умолчанию механизма управления размещением компонентов.
 
             txt1 = new JTextField(); //Текстовое поле нижнее
-            txt1.setBounds(10, 40, 245, 35);
+            txt1.setBounds(37, 40, 218, 35);
             txt1.setHorizontalAlignment(JTextField.RIGHT);
             //txt1.setEditable(false); //Запрещаем редактировать поле 1
             txt1.setFont(txt1.getFont().deriveFont(22f));
@@ -61,6 +66,14 @@ class jPanelApp extends JPanel
             //txt2.setEditable(false); //Запрещаем редактировать поле 2
             txt2.setHorizontalAlignment(JTextField.RIGHT);
             txt2.setBorder(BorderFactory.createEmptyBorder());
+
+
+            txtM = new JTextField(); //Текстовое поле нижнее
+            txtM.setBounds(10, 40, 27, 35);
+            txtM.setHorizontalAlignment(JTextField.LEFT);
+            //txt1.setEditable(false); //Запрещаем редактировать поле 1
+            txtM.setFont(txtM.getFont().deriveFont(14f));
+            txtM.setBorder(BorderFactory.createEmptyBorder());
 
 
             Font bigFont1 = new Font("serif", Font.BOLD, 18);
@@ -169,6 +182,7 @@ class jPanelApp extends JPanel
 
             add(txt1);
             add(txt2);
+            add(txtM);
             add(b0);
             add(b1);
             add(b2);
@@ -205,6 +219,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 1);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -217,6 +234,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 2);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -229,6 +249,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 3);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -241,6 +264,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 4);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -253,6 +279,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 5);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -265,6 +294,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 6);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -277,6 +309,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 7);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -289,6 +324,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 8);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -301,6 +339,9 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 9);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                     }
                     mathPress = 0;
                     resPress = 0;
                 }
@@ -313,8 +354,87 @@ class jPanelApp extends JPanel
                 {
                     delNull();
                     txt1.setText(txt1.getText() + 0);
+                    if (mathPress == 1){
+                        pointPress = 0;
+                    }
                     mathPress = 0;
                     resPress = 0;
+                }
+            });
+
+            bMMinus.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    mem = (mem - Double.parseDouble(txt1.getText()));
+                    txtM.setText("M");
+                }
+            });
+
+            bMPlus.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    mem = (mem + Double.parseDouble(txt1.getText()));
+                    txtM.setText("M");
+                }
+            });
+
+            bMR.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    txt1.setText(String.valueOf(mem));
+                    mathPress = 0;
+                    pointPress = 2;
+                    if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                    {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                    }
+                }
+            });
+
+            bMC.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    mem = 0;
+                    txtM.setText(" ");
+                }
+            });
+
+            bMS.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    mem = Double.parseDouble(txt1.getText());
+                    txtM.setText("M");
+                }
+            });
+
+            bPercent.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    double res1P = Double.parseDouble(txt1.getText());
+                    String strOp = "%";
+                    MetodCalc mc = new MetodCalc();
+                    String strRes = String.valueOf(mc.calc(res, strOp, res1P));
+                    txt1.setText(strRes);
+                    txt2.setText(txt2.getText() + " " + strRes);
+                    sendTotxt2 = 1;
+                    pointPress = 2;
+                    if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                    {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                        txt2.setText(txt2.getText().substring(0, txt2.getText().length() - 2));
+                    }
                 }
             });
 
@@ -328,6 +448,7 @@ class jPanelApp extends JPanel
                     res = 0;
                     res1 = 0;
                     op = "";
+                    pointPress = 0;
                 }
             });
 
@@ -345,15 +466,26 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
-                    delNull();
-                    txt1.setText(txt1.getText() + ".");
+                    switch (pointPress) {
+                            case 0:
+                                txt1.setText(txt1.getText() + ".");
+                                pointPress = 1;
+                                break;
+                            case 2:
+                                txt1.setText("0.");
+                                setRes = 0;
+                                pointPress = 1;
+                                mathPress = 0;
+                                break;
+                    }
                 }
             });
 
             bBS.addActionListener(new ActionListener() {
-                                      @Override
+                @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
+                    if (mathPress != 1 && resPress != 1)
                     if (txt1.getText().length() != 1)
                     {
                         txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 1));
@@ -365,11 +497,65 @@ class jPanelApp extends JPanel
                 }
             });
 
+            b1X.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    double xres = 1;
+                    double xres1 = Double.parseDouble(txt1.getText());
+                    String xop = "/";
+                    MetodCalc mc = new MetodCalc();
+                    String strRes = String.valueOf(mc.calc(xres, xop, xres1));
+                    txt1.setText(strRes);
+                    pointPress = 2;
+                    if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                    {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                    }
+                }
+            });
+
+            bV.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent arg1)
+                {
+                    double vres1 = 0;
+                    double vres = Double.parseDouble(txt1.getText());
+                    String xop = "sqrt";
+                    MetodCalc mc = new MetodCalc();
+                    String strRes = String.valueOf(mc.calc(vres, xop, vres1));
+                    pointPress = 2;
+                    txt1.setText(strRes);
+                    if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                    {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                    }
+                }
+            });
+
+
+            bPlusMinus.addActionListener(new ActionListener()
+            {
+                @Override
+                public void actionPerformed(ActionEvent arg1) {
+                    int ln = txt1.getText().length() - 1;
+                    if (!txt1.getText().equals("0"))
+                        if (txt1.getText().substring(0, txt1.getText().length() - ln).equals("-")) {
+                            txt1.setText(txt1.getText().substring(1, txt1.getText().length()));
+                        } else {
+                            txt1.setText("-" + txt1.getText());
+                        }
+
+                }
+            });
 
             bPlus.addActionListener(new ActionListener() {
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
+                    if (txt1.getText().substring(txt1.getText().length()-1).equals(".")){
+                        txt1.setText(txt1.getText().substring(0,txt1.getText().length()-1));
+                    }
                     if (mathPress == 1){
                         txt2.setText(txt2.getText().substring(0,txt2.getText().length()-5));
                         txt2.setText(txt2.getText() + "  +  ");
@@ -383,11 +569,29 @@ class jPanelApp extends JPanel
                             op = "+";
                             mathPress = 1;
                             resPress = 0;
+                            pointPress = 2;
                         } else {
-                            txt2.setText(txt2.getText() + txt1.getText() + "  +  ");
+                            if (sendTotxt2 == 1)
+                            {
+
+                                txt2.setText(txt2.getText() + "  +  ");
+                                sendTotxt2 = 0;
+
+                            }
+                            else
+                            {
+                                txt2.setText(txt2.getText() + txt1.getText() + "  +  ");
+
+                            }
                             getOpp();
                             op = "+";
                             resPress = 0;
+                            mathPress = 1;
+                            pointPress = 2;
+                            if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                            {
+                                txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                            }
                         }
                     }
 
@@ -399,6 +603,9 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
+                    if (txt1.getText().substring(txt1.getText().length()-1).equals(".")) {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 1));
+                    }
                     if (mathPress == 1){
                         txt2.setText(txt2.getText().substring(0,txt2.getText().length()-5));
                         txt2.setText(txt2.getText() + "  -  ");
@@ -412,11 +619,28 @@ class jPanelApp extends JPanel
                             op = "-";
                             mathPress = 1;
                             resPress = 0;
+                            pointPress = 2;
                         } else {
-                            txt2.setText(txt2.getText() + txt1.getText() + "  -  ");
+                            if (sendTotxt2 == 1)
+                            {
+
+                                txt2.setText(txt2.getText() + "  -  ");
+                                sendTotxt2 = 0;
+
+                            }
+                            else
+                            {
+                                txt2.setText(txt2.getText() + txt1.getText() + "  -  ");
+
+                            }
                             getOpp();
                             op = "-";
                             mathPress = 1;
+                            pointPress = 2;
+                            if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                            {
+                                txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                            }
                         }
                     }
                 }
@@ -427,6 +651,9 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
+                    if (txt1.getText().substring(txt1.getText().length()-1).equals(".")) {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 1));
+                    }
                     if (mathPress == 1){
                         txt2.setText(txt2.getText().substring(0,txt2.getText().length()-5));
                         txt2.setText(txt2.getText() + "  *  ");
@@ -440,11 +667,28 @@ class jPanelApp extends JPanel
                             op = "*";
                             mathPress = 1;
                             resPress = 0;
+                            pointPress = 2;
                         } else {
-                            txt2.setText(txt2.getText() + txt1.getText() + "  *  ");
+                            if (sendTotxt2 == 1)
+                            {
+
+                                txt2.setText(txt2.getText() + "  *  ");
+                                sendTotxt2 = 0;
+
+                            }
+                            else
+                            {
+                                txt2.setText(txt2.getText() + txt1.getText() + "  *  ");
+
+                            }
                             getOpp();
                             op = "*";
                             mathPress = 1;
+                            pointPress = 2;
+                            if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                            {
+                                txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                            }
                         }
                     }
                 }
@@ -455,6 +699,9 @@ class jPanelApp extends JPanel
                 @Override
                 public void actionPerformed(ActionEvent arg1)
                 {
+                    if (txt1.getText().substring(txt1.getText().length()-1).equals(".")) {
+                        txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 1));
+                    }
                     if (mathPress == 1){
                         txt2.setText(txt2.getText().substring(0,txt2.getText().length()-5));
                         txt2.setText(txt2.getText() + "  /  ");
@@ -468,11 +715,28 @@ class jPanelApp extends JPanel
                             op = "/";
                             mathPress = 1;
                             resPress = 0;
+                            pointPress = 2;
                         } else {
-                            txt2.setText(txt2.getText() + txt1.getText() + "  /  ");
+                            if (sendTotxt2 == 1)
+                            {
+
+                                txt2.setText(txt2.getText() + "  /  ");
+                                sendTotxt2 = 0;
+
+                            }
+                            else
+                            {
+                                txt2.setText(txt2.getText() + txt1.getText() + "  /  ");
+
+                            }
                             getOpp();
                             op = "/";
                             mathPress = 1;
+                            pointPress = 2;
+                            if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                            {
+                                txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                            }
                         }
                     }
                 }
@@ -496,6 +760,7 @@ class jPanelApp extends JPanel
                         txt2.setText("");
                         setRes = 1;
                         mathPress = 0;
+                        pointPress = 2;
                     }
                     else {
                         res1 = Double.parseDouble(txt1.getText());
@@ -508,6 +773,11 @@ class jPanelApp extends JPanel
                         setRes = 1;
                         mathPress = 0;
                         resPress = 1;
+                        pointPress = 2;
+                        if(txt1.getText().substring(txt1.getText().length()-1).equals("0"))
+                        {
+                            txt1.setText(txt1.getText().substring(0, txt1.getText().length() - 2));
+                        }
                     }
                 }
             });
