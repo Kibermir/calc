@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1a1f8e1-892d-4349-90dc-3eecd958ffd4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Calc_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TestSetToDispSecond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calc/JPanelApp$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/JPanelApp$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calc/JPanelApp$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/JPanelApp$10.class" afterDir="false" />
@@ -28,6 +26,19 @@
       <change beforePath="$PROJECT_DIR$/out/production/Calc/JPanelApp$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/JPanelApp$9.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calc/JPanelApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/JPanelApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Calc/MetodCalc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/MetodCalc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$28.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MetodCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MetodCalc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jPanelApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jPanelApp.java" afterDir="false" />
     </list>
@@ -65,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jPanelApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jPanelApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jPanelApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="452">
+              <caret line="741" column="36" selection-start-line="741" selection-start-column="24" selection-end-line="741" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,20 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calc.class" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out/production/Calc/Calc.class">
+      <file leaf-file-name="MetodCalc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MetodCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="714">
+              <caret line="42" column="55" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="42" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MetodCalc.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MetodCalc.java">
+      <file leaf-file-name="TestSetToDispSecond.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TestSetToDispSecond.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="136">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -108,21 +122,42 @@
     <findStrings>
       <find>calculator</find>
       <find>arg1</find>
-      <find>bres</find>
       <find>bRes</find>
-      <find>setres</find>
       <find>+</find>
       <find>/</find>
       <find>*</find>
-      <find>res</find>
       <find>equal</find>
       <find>equals</find>
       <find>strres</find>
       <find>1x</find>
+      <find>mathpress</find>
       <find>point</find>
+      <find>sendtodisp</find>
+      <find>setres</find>
+      <find>res1</find>
+      <find>res</find>
+      <find>res1cicl</find>
+      <find>res12</find>
+      <find>mathpres1c</find>
+      <find>setres1</find>
+      <find>bres</find>
+      <find>bres1</find>
+      <find>res1cic</find>
+      <find>catc</find>
+      <find>bc</find>
+      <find>if (dispMain.getText().substring(dispMain.getText().length() -</find>
+      <find>bplus</find>
+      <find>getopp</find>
     </findStrings>
     <replaceStrings>
       <replace>JTextField</replace>
+      <replace>dispMain</replace>
+      <replace>sendToDispSecond</replace>
+      <replace>res1</replace>
+      <replace>res2</replace>
+      <replace>setRes1</replace>
+      <replace>bres</replace>
+      <replace>resCycle</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -141,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/jFrameApp.java" />
         <option value="$PROJECT_DIR$/src/NewButton.java" />
         <option value="$PROJECT_DIR$/src/MetodCalc.java" />
+        <option value="$PROJECT_DIR$/src/TestSetToDispSecond.java" />
         <option value="$PROJECT_DIR$/src/jPanelApp.java" />
       </list>
     </option>
@@ -157,6 +193,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,12 +239,55 @@
               <item name="calc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="calc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 10 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="java.base" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +388,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13913043" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26086956" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -599,6 +680,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/NewButton.java" />
+    <entry file="file://$PROJECT_DIR$/out/production/Calc/Calc.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/security/ProtectionDomain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Calc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -609,6 +700,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/math/FloatingDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="2053" selection-start-line="2053" selection-end-line="2053" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/jFrameApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -616,27 +714,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Calc/Calc.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MetodCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="714">
+          <caret line="42" column="55" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="42" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/jPanelApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="452">
+          <caret line="741" column="36" selection-start-line="741" selection-start-column="24" selection-end-line="741" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TestSetToDispSecond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
