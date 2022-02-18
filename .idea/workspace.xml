@@ -7,54 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1a1f8e1-892d-4349-90dc-3eecd958ffd4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Calc_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Calc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/Calc_jar/Calc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/Calc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/MetodCalc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/TestSetToDispSecond.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jFrameApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$10.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$11.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$12.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$13.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$14.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$15.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$16.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$17.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$18.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$19.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$20.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$21.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$22.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$23.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$24.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$25.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$26.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$27.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$28.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$8.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$9.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MetodCalc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestSetToDispSecond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jFrameApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/jPanelApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Calc/jPanelApp$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Calc/jPanelApp$28.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +70,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0a540787-6c56-48b6-9689-d95a5406fe4b" />
+        <option name="url" value="https://github.com/schacon/simplegit-progit" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -206,12 +170,18 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CalcFromGitHub/src/jPanelApp.java" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Subversion.Network" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../CalcFromGitHub/src/jPanelApp.java" />
+    <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/../CalcFromGitHub" />
   </component>
   <component name="RunManager">
     <configuration name="Calc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -295,6 +265,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32934782" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$/developcalc" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Calc.java">
