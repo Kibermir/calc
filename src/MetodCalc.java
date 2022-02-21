@@ -6,7 +6,7 @@ class MetodCalc
 {
     public double calc ( double n1, String op, double n2)
     {
-        try {
+        //try {
             double res = 0;
             switch (op)
             {
@@ -32,19 +32,16 @@ class MetodCalc
                     res = n2;
                     break;
             }
-            throw new NullPointerException("Математика");
-           // return res;
+            //throw new NullPointerException("Математика");
+            return res;
 
-        }
-
-        catch (Throwable e)
-        {
+        //catch (Throwable e)
+        //{
           //jPanelApp test = new jPanelApp();
           //test.dispSecond.setText(String.valueOf(e));
           // System.out.println("сразу после вызова setDisp " + test.getDisp() );
            //jPanelApp.ff = "test123";
 
-        }
-        return n1;
+       // }
     }
 }

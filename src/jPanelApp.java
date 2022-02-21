@@ -706,13 +706,14 @@ class jPanelApp extends JPanel
                 bres.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent arg0) {
-                        /*if (resPres == 1) {
+                        if (resPres == 1) {
                             if (resCycle == 0) {
                                 resCycle = res2;
                             }
                             res2 = Double.parseDouble(dispMain.getText());
                             String strOp = op;
                             MetodCalc mc = new MetodCalc();
+
                             String strres1 = String.valueOf(mc.calc(resCycle, strOp, res2));
                             dispMain.setText(strres1);
                             dispSecond.setText("");
@@ -737,7 +738,7 @@ class jPanelApp extends JPanel
                             if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
                                 dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                             }
-                            }*/
+                            }
                         TestSetToDispSecond qqq = new TestSetToDispSecond();
                         qqq.testSet();
                     }
