@@ -1,11 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 class jPanelApp extends JPanel
 {
-    static public String ff = "";
     double res1 = 0;                     //Variable for first operand.
     double res2 = 0;                    //Variable for second operand.
     double mem = 0;                     //Variable for calc memory.
@@ -23,23 +20,6 @@ class jPanelApp extends JPanel
     public JTextField dispSecond;      // Second top display.
     private JTextField dispMem;         // Memory display in low left corner.
 
-
-
-    public void setDisp(String d1, String d2)
-    {
-        //System.out.println(dispMain.getText());
-        //dispMain.setText(d1);
-        //System.out.println(dispMain.getText());
-        dispSecond.setText(ff);
-        System.out.println("внутри setDisp " + dispSecond.getText());
-    }
-    public String getDisp()
-    {
-        String r;
-        r = dispSecond.getText();
-        return r;
-
-    }
 
 
     public void delNull()
@@ -73,7 +53,7 @@ class jPanelApp extends JPanel
             //System.out.println("После выхода из операции "+strres1);
             System.out.println("После выхода из операции "+dispSecond.getText());
             dispMain.setText(strres1);
-            if (op == "%") {
+            if (op.equals("%")) {
                 dispSecond.setText(dispSecond.getText() + " " + strres1);
             }
             setRes1 = 1;
@@ -250,22 +230,17 @@ class jPanelApp extends JPanel
                 add(bMulti);
                 add(bDivision);
 
-                b1.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        delNull();
-                        dispMain.setText(dispMain.getText() + 1);
-                        if (mathPres == 1) {
+                b1.addActionListener((ActionListener) -> {
+                    delNull();
+                    dispMain.setText(dispMain.getText() + 1);
+                       if (mathPres == 1) {
                             pointPres = 0;
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b2.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b2.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 2);
                         if (mathPres == 1) {
@@ -273,12 +248,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
-                });
+                 });
 
-                b3.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b3.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 3);
                         if (mathPres == 1) {
@@ -286,12 +258,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b4.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b4.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 4);
                         if (mathPres == 1) {
@@ -299,12 +268,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b5.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b5.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 5);
                         if (mathPres == 1) {
@@ -312,12 +278,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b6.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b6.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 6);
                         if (mathPres == 1) {
@@ -325,12 +288,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b7.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b7.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 7);
                         if (mathPres == 1) {
@@ -338,12 +298,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b8.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b8.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 8);
                         if (mathPres == 1) {
@@ -351,12 +308,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b9.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b9.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 9);
                         if (mathPres == 1) {
@@ -364,12 +318,9 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                b0.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b0.addActionListener((ActionListener) -> {
                         delNull();
                         dispMain.setText(dispMain.getText() + 0);
                         if (mathPres == 1) {
@@ -377,56 +328,38 @@ class jPanelApp extends JPanel
                         }
                         mathPres = 0;
                         resPres = 0;
-                    }
                 });
 
-                bMMinus.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bMMinus.addActionListener((ActionListener) -> {
                         mem = (mem - Double.parseDouble(dispMain.getText()));
                         dispMem.setText("M");
-                    }
                 });
 
-                bMPlus.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bMPlus.addActionListener((ActionListener) -> {
                         mem = (mem + Double.parseDouble(dispMain.getText()));
                         dispMem.setText("M");
-                    }
                 });
 
-                bMR.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bMR.addActionListener((ActionListener) -> {
                         dispMain.setText(String.valueOf(mem));
                         mathPres = 0;
                         pointPres = 2;
-                        if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                        if (dispMain.getText().endsWith(".0")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                         }
-                    }
                 });
 
-                bMC.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bMC.addActionListener((ActionListener) -> {
                         mem = 0;
                         dispMem.setText(" ");
-                    }
                 });
 
-                bMS.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bMS.addActionListener((ActionListener) -> {
                         mem = Double.parseDouble(dispMain.getText());
                         dispMem.setText("M");
-                    }
                 });
 
-                bPercent.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bPercent.addActionListener((ActionListener) -> {
                         double res2P = Double.parseDouble(dispMain.getText());
                         String strOp = "%";
                         MetodCalc mc = new MetodCalc();
@@ -435,34 +368,23 @@ class jPanelApp extends JPanel
                         dispSecond.setText(dispSecond.getText() + " " + strres1);
                         sendToDispSecond = 1;
                         pointPres = 2;
-                        if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                        if (dispMain.getText().endsWith(".0")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                             dispSecond.setText(dispSecond.getText().substring(0, dispSecond.getText().length() - 2));
                         }
-                    }
                 });
 
-                bC.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bC.addActionListener((ActionListener) -> {
                         dispMain.setText("0");
                         dispSecond.setText("");
                         res1 = res2 = resCycle = 0;
                         op = "";
                         mathPres = resPres = pointPres = sendToDispSecond = setRes1 = 0;
-                    }
                 });
 
-                bCE.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        dispMain.setText("0");
-                    }
-                });
+                bCE.addActionListener((ActionListener) -> dispMain.setText("0"));
 
-                bPoint.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bPoint.addActionListener((ActionListener) -> {
                         switch (pointPres) {
                             case 0:
                                 dispMain.setText(dispMain.getText() + ".");
@@ -475,24 +397,18 @@ class jPanelApp extends JPanel
                                 mathPres = 0;
                                 break;
                         }
-                    }
                 });
 
-                bBS.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bBS.addActionListener((ActionListener) -> {
                         if (mathPres != 1 && resPres != 1)
                             if (dispMain.getText().length() != 1) {
                                 dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 1));
                             } else {
                                 dispMain.setText("0");
                             }
-                    }
                 });
 
-                b1X.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                b1X.addActionListener((ActionListener) -> {
                         double xres1 = 1;
                         double xres2 = Double.parseDouble(dispMain.getText());
                         String xop = "/";
@@ -500,15 +416,12 @@ class jPanelApp extends JPanel
                         String strres1 = String.valueOf(mc.calc(xres1, xop, xres2));
                         dispMain.setText(strres1);
                         pointPres = 2;
-                        if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                        if (dispMain.getText().endsWith(".0")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                         }
-                    }
                 });
 
-                bV.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bV.addActionListener((ActionListener) -> {
                         double vres2 = 0;
                         double vres1 = Double.parseDouble(dispMain.getText());
                         String xop = "sqrt";
@@ -516,31 +429,24 @@ class jPanelApp extends JPanel
                         String strres1 = String.valueOf(mc.calc(vres1, xop, vres2));
                         pointPres = 2;
                         dispMain.setText(strres1);
-                        if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                        if (dispMain.getText().endsWith(".0")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                         }
-                    }
                 });
 
-
-                bPlusMinus.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
+                bPlusMinus.addActionListener((ActionListener) -> {
                         int ln = dispMain.getText().length() - 1;
                         if (!dispMain.getText().equals("0"))
                             if (dispMain.getText().substring(0, dispMain.getText().length() - ln).equals("-")) {
-                                dispMain.setText(dispMain.getText().substring(1, dispMain.getText().length()));
+                                dispMain.setText(dispMain.getText().substring(1));
                             } else {
                                 dispMain.setText("-" + dispMain.getText());
                             }
 
-                    }
                 });
 
-                bPlus.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        if (dispMain.getText().substring(dispMain.getText().length() - 1).equals(".")) {
+                bPlus.addActionListener((ActionListener) -> {
+                        if (dispMain.getText().endsWith(".")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 1));
                         }
                         if (mathPres == 1) {
@@ -571,19 +477,15 @@ class jPanelApp extends JPanel
                                 resPres = 0;
                                 mathPres = 1;
                                 pointPres = 2;
-                                if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                                if (dispMain.getText().endsWith(".0")) {
                                     dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                                 }
                             }
                         }
-
-                    }
                 });
 
-                bMinus.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        if (dispMain.getText().substring(dispMain.getText().length() - 1).equals(".")) {
+                bMinus.addActionListener((ActionListener) -> {
+                        if (dispMain.getText().endsWith(".")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 1));
                         }
                         if (mathPres == 1) {
@@ -613,18 +515,15 @@ class jPanelApp extends JPanel
                                 op = "-";
                                 mathPres = 1;
                                 pointPres = 2;
-                                if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                                if (dispMain.getText().endsWith(".0")) {
                                     dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                                 }
                             }
                         }
-                    }
                 });
 
-                bMulti.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        if (dispMain.getText().substring(dispMain.getText().length() - 1).equals(".")) {
+                bMulti.addActionListener((ActionListener) -> {
+                        if (dispMain.getText().endsWith(".")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 1));
                         }
                         if (mathPres == 1) {
@@ -654,18 +553,15 @@ class jPanelApp extends JPanel
                                 op = "*";
                                 mathPres = 1;
                                 pointPres = 2;
-                                if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                                if (dispMain.getText().endsWith(".0")) {
                                     dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                                 }
                             }
                         }
-                    }
                 });
 
-                bDivision.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg1) {
-                        if (dispMain.getText().substring(dispMain.getText().length() - 1).equals(".")) {
+                bDivision.addActionListener((ActionListener) -> {
+                        if (dispMain.getText().endsWith(".")) {
                             dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 1));
                         }
                         if (mathPres == 1) {
@@ -695,53 +591,44 @@ class jPanelApp extends JPanel
                                 op = "/";
                                 mathPres = 1;
                                 pointPres = 2;
-                                if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
+                                if (dispMain.getText().endsWith(".0")) {
                                     dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                                 }
                             }
                         }
-                    }
                 });
 
-                bres.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent arg0) {
-                        if (resPres == 1) {
+                bres.addActionListener((ActionListener) -> {
+                        res2 = Double.parseDouble(dispMain.getText());
+                        MetodCalc mc = new MetodCalc();
+                        String strOp = op;
+                        if (resPres == 1)
+
+                            {
                             if (resCycle == 0) {
                                 resCycle = res2;
                             }
-                            res2 = Double.parseDouble(dispMain.getText());
-                            String strOp = op;
-                            MetodCalc mc = new MetodCalc();
-
                             String strres1 = String.valueOf(mc.calc(resCycle, strOp, res2));
                             dispMain.setText(strres1);
-                            dispSecond.setText("");
-                            setRes1 = 1;
-                            mathPres = 0;
-                            pointPres = 2;
-                            if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
-                                dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
                             }
-                            } else {
-                            res2 = Double.parseDouble(dispMain.getText());
-                            String strOp = op;
-                            MetodCalc mc = new MetodCalc();
+
+                            else {
                             String strres1 = String.valueOf(mc.calc(res1, strOp, res2));
                             dispMain.setText(strres1);
-                            dispSecond.setText("");
                             res1 = 0;
-                            setRes1 = 1;
-                            mathPres = 0;
                             resPres = 1;
-                            pointPres = 2;
-                            if (dispMain.getText().substring(dispMain.getText().length() - 2).equals(".0")) {
-                                dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
+
                             }
-                            }
+                        if (dispMain.getText().endsWith(".0")) {
+                            dispMain.setText(dispMain.getText().substring(0, dispMain.getText().length() - 2));
+                        }
+                        setRes1 = 1;
+                        pointPres = 2;
+                        dispSecond.setText("");
+                        mathPres = 0;
+
                         TestSetToDispSecond qqq = new TestSetToDispSecond();
                         qqq.testSet();
-                    }
                 });
 
 
